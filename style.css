@@ -50,6 +50,12 @@ img:hover {
     --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
 }
 
+.gallery:has(> div:nth-child(4):hover){
+    --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
+.gallery:has(> div:nth-child(5):hover){
+    --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
 .gallery>div:has(>img:nth-child(1):hover) {
     --grid-rows: var(--size-hover) var(--size-not-hover) var(--size-not-hover);
 }
@@ -59,5 +65,13 @@ img:hover {
 }
 
 .gallery>div:has(>img:nth-child(3):hover) {
+    --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
+
+.gallery>div:has(>img:nth-child(4):hover) {
+    --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
+
+.gallery>div:has(>img:nth-child(5):hover) {
     --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
 }
